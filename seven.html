@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seven day 10</title>
+</head>
+<body>
+    <p> Hello, my name is Raj. I have recently completed my engineering in the field of Biomedical and at present I am studying a post graduate program in Advanced Computing. I am looking forward to persue a career in the Information Techology industry</p>
+
+    <p> Hello, my name is Raj. I have recently completed my engineering in the field of Biomedical and at present I am studying a post graduate program in Advanced Computing. I am looking forward to persue a career in the Information Techology industry</p>
+
+    <p> Hello, my name is Raj. I have recently completed my engineering in the field of Biomedical and at present I am studying a post graduate program in Advanced Computing. I am looking forward to persue a career in the Information Techology industry</p>
+
+    <button>click</button><br>
+
+    <span></span>
+
+    <script>
+        var btn = document.querySelector("button");
+        var p = document.querySelectorAll("p");
+        var s = document.querySelector("span");
+
+
+        btn.addEventListener("click", function () {
+            p.forEach(function(val) {
+                val.style.background = "blue";
+            });
+            s.textContent = "There are " + p.length + " paragraphs";
+        });
+    </script>
+</body>
+</html>

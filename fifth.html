@@ -6,6 +6,8 @@
     <title>fifth day 10</title>
 </head>
 <body>
+
+    <p id = "demo">Raj</p>
     <select name="first" id="slt">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -22,7 +24,12 @@
 
     <script>
         var slt = document.getElementById("slt");
+        var p = document.getElementById("demo");
 
+        slt.addEventListener("change", function(val) {
+            p.style.fontSize = this.value + "px";
+        });
+        
 
 
     </script>

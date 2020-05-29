@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eight day 10</title>
+</head>
+<body>
+    <ol>
+        <li>Nikhil</li>
+        <li>Priya</li>
+        <li>Hemal</li>
+    </ol>
+
+    <button>click</button>
+
+    <script>
+        var ol = document.querySelector("ol");
+        var button = document.querySelector("button");
+
+
+        button.addEventListener("click", function () {
+            ol.removeChild(ol.childNodes[0]);
+        })
+    </script>
+</body>
+</html>

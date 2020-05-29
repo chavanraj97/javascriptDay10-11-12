@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sixth day 10</title>
+    <style>
+        input {
+            width : 10%;
+            height : 20px;
+            padding: 5px 5px;
+            border: 1px solid red;
+        }
+        #ip3 {
+            border: 1px dashed blue;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="ip1"><span id = "spn"></span>
+    <input type="number" id="ip2">&nbsp;&nbsp = &nbsp;&nbsp;
+    <input type="text" id="ip3">
+
+    <button id="add">Add</button>
+    <button id="sub">Subtract</button>
+
+
+    <script>
+        var btn = document.querySelectorAll("button");
+        var ipt = document.querySelectorAll("input");
+
+        btn[0].addEventListener("click", function(){
+            ipt[2].value = Number(ipt[0].value) + Number(ipt[1].value);
+        });
+
+        btn[1].addEventListener("click", function(){
+            ipt[2].value = Number(ipt[0].value) - Number(ipt[1].value);
+        });
+
+
+    </script>
+
+
+</body>
+</html>
