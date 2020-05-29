@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twelve day 10</title>
+</head>
+<body>
+    
+    <input type="checkbox" name="b1" id="ipt1">
+    <label for="b1">game of thrones : $10</label>
+    <input type="checkbox" name="b2" id="ipt2">
+    <label for="b2">Fifty shades of gray : $20</label>
+    <input type="checkbox" name="b3" id="ipt3">
+    <label for="b3">The fault in our stars : $15</label>
+    <input type="text" name="tb" id="tbd">
+    <script>
+        var p = document.getElementById("tbd");
+        var c = document.querySelectorAll("input");
+        var sum = 0;
+
+        c[0].addEventListener("click", function () {
+            if(this.checked == true) {
+                sum += 10;
+            }
+            else {
+                sum -= 10;
+            }
+            p.value = "$" + sum ;
+        });
+
+        c[1].addEventListener("click", function () {
+            if(this.checked == true) {
+                sum += 20;
+            }
+            else {
+                sum -= 20;
+            }
+            p.value = "$" + sum;
+        });
+
+        c[2].addEventListener("click", function () {
+            if(this.checked == true) {
+                sum += 15;
+            }
+            else {
+                sum -= 15;
+            }
+            p.value = "$" + sum;
+        });
+
+
+        
+    </script>
+</body>
+</html>
