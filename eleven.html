@@ -15,8 +15,14 @@
         var ipt = document.getElementById("ipt");
         var sp = document.getElementById("sp");
 
+        var p = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
         ipt.addEventListener("change", function() {
-            
+            if(ipt.value.match(p)) {
+                alert("it's okay");
+            }
+            else {
+                alert("not okay");
+            }
         })
 
 
